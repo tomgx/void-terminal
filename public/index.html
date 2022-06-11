@@ -11,7 +11,7 @@
     <title>void</title>
   </head>
 
-  <body onload="myFunction()" style="margin: 0">
+  <body onload="timeOut()" style="margin: 0">
     <div
       id="loader"
       style="
@@ -40,7 +40,7 @@
     <script>
       var timeout;
 
-      function myFunction() {
+      function timeOut() {
         timeout = setTimeout(showPage, 3000);
       }
 
