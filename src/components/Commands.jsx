@@ -56,7 +56,7 @@ const commands = {
       </a>{" "}
       <a
         className="hover:text-[#eee]"
-        href="https://github.com/tomgx/void.is-a-dev/blob/main/tailwind.config.js"
+        href="https://raw.githubusercontent.com/tomgx/void.is-a-dev/main/tailwind.config.js"
       >
         tailwind.config.js"
       </a>
