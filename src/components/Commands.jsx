@@ -1,7 +1,7 @@
 import React from "react";
 
 const commands = {
-  help: "profile repo ls",
+  help: "profile repo ls clear",
   repo: (
     <a
       className="hover:text-[#eee]"
@@ -82,6 +82,8 @@ const Commands = () => {
         return updateConsoleOutput((consoleOutput) =>
           consoleOutput.concat(newConsoleLine)
         );
+      } else if (value === "clear") {
+        return updateConsoleOutput((consoleOutput) => consoleOutput.splice());
       } else {
         const newConsoleLine = (
           <>
