@@ -40,7 +40,7 @@ const commands = {
         className="hover:text-[#eee]"
         href="https://raw.githubusercontent.com/tomgx/void.is-a-dev/main/postcss.config.js"
       >
-        postcss.config.j
+        postcss.config.js
       </a>{" "}
       <a
         className="hover:text-[#eee]"
