@@ -1,3 +1,74 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Ubuntu Mono";
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+code {
+  font-family: "Ubuntu Mono";
+}
+
+input:focus {
+  outline: none;
+}
+
+.console-output::-webkit-scrollbar {
+  display: none;
+}
+
+.console-output {
+  font-weight: bold;
+  letter-spacing: 2px;
+  overflow-y: scroll;
+  width: 100%;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.input-prompt {
+  font-weight: bold;
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+.console {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  align-items: flex-start;
+  width: 40%;
+  padding: 20px;
+  border: 8px;
+  background-color: #121520;
+  border-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  border-style: double;
+  background-position: bottom;
+  background-size: 500px;
+  background-image: url("./assets/ina4.gif");
+  background-repeat: no-repeat;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 80%;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  caret-color: #48ff00;
+}
+
+.word-spacing {
+  word-spacing: 20px;
+}
