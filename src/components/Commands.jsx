@@ -68,28 +68,39 @@ const Commands = () => {
   const [consoleOutput, updateConsoleOutput] = React.useState([]);
 
   const onEnter = (value, key) => {
+    var userInput = value.trim();
     if (key === "Enter") {
-      if (commands[value] != null) {
+      if (commands[userInput] != null) {
         const newConsoleLine = (
           <>
-            <span>{value}</span>
+            <span>{userInput}</span>
             <br />
             <span className="text-[#37b0d4] word-spacing">
-              {commands[value]}
+              {commands[userInput]}
             </span>
           </>
         );
         return updateConsoleOutput((consoleOutput) =>
           consoleOutput.concat(newConsoleLine)
         );
-      } else if (value === "clear") {
+      } else if (userInput === "clear") {
         return updateConsoleOutput((consoleOutput) => consoleOutput.splice());
+      } else if (userInput.trim().length === 0) {
+        const newConsoleLine = (
+          <>
+            <br />
+          </>
+        );
+
+        return updateConsoleOutput((consoleOutput) =>
+          consoleOutput.concat(newConsoleLine)
+        );
       } else {
         const newConsoleLine = (
           <>
-            <span>{value}</span>
+            <span>{userInput}</span>
             <br />
-            <span>{value}: command not found</span>
+            <span>{userInput}: command not found</span>
           </>
         );
 
