@@ -13,8 +13,12 @@ const Terminal = () => {
     inputText.current.focus();
   });
 
+  const focusMethod = function getFocus() {
+    document.getElementById("text-field").focus();
+  };
+
   return (
-    <section className="console">
+    <section className="console cursor-text" onClick={focusMethod}>
       <div className="opacity-20 h-0 w-full">
         <h1 className="float-right -mt-[20px] -mr-[15px]">
           type 'help' for commands
@@ -25,6 +29,7 @@ const Terminal = () => {
         <Prompt />
         <input
           type="text"
+          id="text-field"
           autoFocus={true}
           onBlur={({ target }) => target.focus()}
           spellCheck={false}
