@@ -5,9 +5,9 @@ const commands = {
   repo: (
     <a
       className="hover:text-[#eee]"
-      href="https://github.com/tomgx/void.is-a-dev"
+      href="https://github.com/tomgx/void-terminal"
     >
-      https://github.com/tomgx/void.is-a-dev
+      https://github.com/tomgx/void-terminal
     </a>
   ),
   profile: (
