@@ -6,4 +6,4 @@
 
 # [**Live Demo**](https://void.is-a.dev/)
 
-![Example image](https://i.imgur.com/XbOUFku.png)
+![Example image](https://i.imgur.com/pKuzvFp.png)
