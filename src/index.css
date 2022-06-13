@@ -42,12 +42,15 @@ input:focus {
 
 .console {
   display: flex;
+  position: absolute;
+  top: 35%;
   flex-direction: column;
   height: 400px;
   align-items: flex-start;
   width: 40%;
   padding: 20px;
-  border: 8px;
+  margin-top: -70px;
+  border: 12px;
   background-color: #121520;
   border-color: rgb(0, 0, 0);
   border-radius: 10px;
